@@ -2,6 +2,8 @@ import { ConnectButton } from '@rainbow-me/rainbowkit';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
+import TokenSection from '../components/TokenSection';
+import AMMsection from '../components/AMMsection';
 
 const Home: NextPage = () => {
   return (
@@ -18,7 +20,7 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         <ConnectButton />
 
-        <h1 className={styles.title}>
+        {/* <h1 className={styles.title}>
           Welcome to <a href="">RainbowKit</a> + <a href="">wagmi</a> +{' '}
           <a href="https://nextjs.org">Next.js!</a>
         </h1>
@@ -26,9 +28,9 @@ const Home: NextPage = () => {
         <p className={styles.description}>
           Get started by editing{' '}
           <code className={styles.code}>pages/index.tsx</code>
-        </p>
+        </p> */}
 
-        <div className={styles.grid}>
+        {/* <div className={styles.grid}>
           <a className={styles.card} href="https://rainbowkit.com">
             <h2>RainbowKit Documentation &rarr;</h2>
             <p>Learn how to customize your wallet connection flow.</p>
@@ -69,14 +71,15 @@ const Home: NextPage = () => {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
-        </div>
+        </div> */}
+        <TokenSection/>
+        <AMMsection/>
       </main>
 
-      <footer className={styles.footer}>
-        <a href="https://rainbow.me" rel="noopener noreferrer" target="_blank">
-          Made with ❤️ by your frens at 🌈
-        </a>
-      </footer>
+      
+ 
+      
+      
     </div>
   );
 };
